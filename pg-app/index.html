@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="pt-br"><head><title>27/7</title><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10, minimum-scale=1.0"><link rel="stylesheet" href="css.css"><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+        /* Estilo opcional para o texto piscante */
+        .blinking-text {
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '421845347414008');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=421845347414008&ev=PageView&noscript=1"/>
+    </noscript>
+
+</head><body><div id="form" class="login-box"> <img style="width: 300px;margin-top: 10px;margin-bottom: 25px" src="magnata.png"> <h2 id="segundo" >The most popular platform in India with minimum deposit ₹100 and minimum withdrawal ₹100.
+Register and log in for free.<br><span style="font-size: 25px;color: #f9ff00;">Deposit and receive a 100% deposit bonus immediately.</span></h2> <div id="forml" > <div style="text-align: center;" id="cta1" class="mt-4"> 
+
+	<a href="https://www.724game.xyz/store/apps/details-v2" class="a-btn" style="text-decoration: none;" target="blank"> <span class="span-btn">DOWNLOAD APP NOW</span> </a>
+
+	<!-- <img style="width: 70%; padding-top: 20px" src="telegram2.png"> --> </div>
+
+<!--
+<h3 style="color: #fff;font-size: 15px;"><span style="font-size: 28px" id="piscante" class="blinking-text">🔴</span><span style="font-size: 30px" id="numero"></span><br>Remaining Winning Deposits</h3>
+</div></div>-->
+
+<h3 style="text-align: left;
+    margin: 10px auto;
+    width: 200px;
+    color: #fff;"><span style="font-size: 25px;display: none;" id="piscante" class="blinking-text">🟢</span><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Mines<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Dragon vs Tiger<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Rummy Game</h3>
+
+<script>
+        function piscarTexto() {
+            var elemento = document.getElementById('piscante');
+            elemento.classList.toggle('blinking-text');
+        }
+
+        // Inicia o piscar do texto a cada 1500 milissegundos (1,5 segundos)
+        setInterval(piscarTexto, 1000);
+    </script>
+
+    <script>
+    // Função para obter ou definir o número no Local Storage
+    function obterOuDefinirNumero() {
+      // Tenta obter o número do Local Storage
+      var numeroAtual = localStorage.getItem('numero');
+
+      // Se o número não estiver no Local Storage, define-o como 7
+      if (numeroAtual === null) {
+        numeroAtual = 8;
+        localStorage.setItem('numero', numeroAtual);
+      }
+
+      return parseInt(numeroAtual);
+    }
+
+    // Função para reduzir o número
+    function reduzirNumero() {
+      // Obtém o elemento com o ID 'numero'
+      var numeroElement = document.getElementById('numero');
+
+      // Obtém o número atual do Local Storage
+      var numeroAtual = obterOuDefinirNumero();
+
+      // Reduz o número em 1
+      var novoNumero = numeroAtual - 1;
+
+      // Atualiza o texto do elemento com o novo número
+      numeroElement.innerText = novoNumero;
+
+      // Atualiza o número no Local Storage
+      localStorage.setItem('numero', novoNumero);
+    }
+
+    // Chama a função de redução ao carregar a página
+    reduzirNumero();
+  </script>
+</body></html>
