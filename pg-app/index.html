@@ -33,66 +33,72 @@
     src="https://www.facebook.com/tr?id=421845347414008&ev=PageView&noscript=1"/>
     </noscript>
 
-</head><body><div id="form" class="login-box"> <img style="width: 300px;margin-top: 10px;margin-bottom: 25px" src="magnata.png"> <h2 id="segundo" >The most popular platform in India with minimum deposit ₹100 and minimum withdrawal ₹100.
-Register and log in for free.<br><span style="font-size: 25px;color: #f9ff00;">Deposit and receive a 100% deposit bonus immediately.</span></h2> <div id="forml" > <div style="text-align: center;" id="cta1" class="mt-4"> 
+</head>
+	<body>
+    <div id="form" class="login-box">
+    <img style="width: 300px;margin-top: 10px;margin-bottom: 25px" src="magnata.png"> 
+    <h2 id="segundo" >The most popular platform in India.<br><span style="font-size: 25px;color: #f9ff00;">TODAY ONLY: Welcome Bonus! Make your first minimum deposit and earn up to 10x your balance instantly!</span>
+    </h2>
+    <div id="forml" >
+    
 
-	<a href="https://www.724game.xyz/store/apps/details-v2" class="a-btn" style="text-decoration: none;" target="blank"> <span class="span-btn">DOWNLOAD APP NOW</span> </a>
+      <h3 style="color: #fff;font-size: 15px;"><span style="font-size: 28px" id="piscante" class="blinking-text">🔴</span><span style="font-size: 30px" id="numero"></span><br>Remaining Winning Deposits</h3>
 
-	<!-- <img style="width: 70%; padding-top: 20px" src="telegram2.png"> --> </div>
+      <div style="text-align: center;" id="cta1" class="mt-4">
+      <a href="https://www.724game.xyz/store/apps/details-v2" class="a-btn" style="text-decoration: none;" target="blank"> <span class="span-btn">REGISTER NOW</span> </a>
+      <!-- <img style="width: 70%; padding-top: 20px" src="telegram2.png"> --> 
+    </div>
+      </div>
 
-<!--
-<h3 style="color: #fff;font-size: 15px;"><span style="font-size: 28px" id="piscante" class="blinking-text">🔴</span><span style="font-size: 30px" id="numero"></span><br>Remaining Winning Deposits</h3>
-</div></div>-->
-
-<h3 style="text-align: left;
-    margin: 10px auto;
-    width: 200px;
-    color: #fff;"><span style="font-size: 25px;display: none;" id="piscante" class="blinking-text">🟢</span><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Mines<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Dragon vs Tiger<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Rummy Game</h3>
-
-<script>
-        function piscarTexto() {
-            var elemento = document.getElementById('piscante');
-            elemento.classList.toggle('blinking-text');
-        }
-
-        // Inicia o piscar do texto a cada 1500 milissegundos (1,5 segundos)
-        setInterval(piscarTexto, 1000);
-    </script>
-
+    </div>
+    <!--<h3 style="text-align: left;
+      margin: 10px auto;
+      width: 200px;
+      color: #fff;"><span style="font-size: 25px;display: none;" id="piscante" class="blinking-text">🟢</span><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Mines<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Dragon vs Tiger<br><span style="font-size: 25px" id="piscante" class="blinking-text">🟢</span> Rummy Game</h3> -->
     <script>
-    // Função para obter ou definir o número no Local Storage
-    function obterOuDefinirNumero() {
-      // Tenta obter o número do Local Storage
-      var numeroAtual = localStorage.getItem('numero');
-
-      // Se o número não estiver no Local Storage, define-o como 7
-      if (numeroAtual === null) {
-        numeroAtual = 8;
-        localStorage.setItem('numero', numeroAtual);
+      function piscarTexto() {
+          var elemento = document.getElementById('piscante');
+          elemento.classList.toggle('blinking-text');
       }
-
-      return parseInt(numeroAtual);
-    }
-
-    // Função para reduzir o número
-    function reduzirNumero() {
-      // Obtém o elemento com o ID 'numero'
-      var numeroElement = document.getElementById('numero');
-
-      // Obtém o número atual do Local Storage
-      var numeroAtual = obterOuDefinirNumero();
-
-      // Reduz o número em 1
-      var novoNumero = numeroAtual - 1;
-
-      // Atualiza o texto do elemento com o novo número
-      numeroElement.innerText = novoNumero;
-
-      // Atualiza o número no Local Storage
-      localStorage.setItem('numero', novoNumero);
-    }
-
-    // Chama a função de redução ao carregar a página
-    reduzirNumero();
-  </script>
-</body></html>
+      
+      // Inicia o piscar do texto a cada 1500 milissegundos (1,5 segundos)
+      setInterval(piscarTexto, 1000);
+    </script>
+    <script>
+      // Função para obter ou definir o número no Local Storage
+      function obterOuDefinirNumero() {
+        // Tenta obter o número do Local Storage
+        var numeroAtual = localStorage.getItem('numero');
+      
+        // Se o número não estiver no Local Storage, define-o como 7
+        if (numeroAtual === null) {
+          numeroAtual = 8;
+          localStorage.setItem('numero', numeroAtual);
+        }
+      
+        return parseInt(numeroAtual);
+      }
+      
+      // Função para reduzir o número
+      function reduzirNumero() {
+        // Obtém o elemento com o ID 'numero'
+        var numeroElement = document.getElementById('numero');
+      
+        // Obtém o número atual do Local Storage
+        var numeroAtual = obterOuDefinirNumero();
+      
+        // Reduz o número em 1
+        var novoNumero = numeroAtual - 1;
+      
+        // Atualiza o texto do elemento com o novo número
+        numeroElement.innerText = novoNumero;
+      
+        // Atualiza o número no Local Storage
+        localStorage.setItem('numero', novoNumero);
+      }
+      
+      // Chama a função de redução ao carregar a página
+      reduzirNumero();
+    </script>
+  </body>
+</html>
